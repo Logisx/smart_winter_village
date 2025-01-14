@@ -1,6 +1,6 @@
 # Smart Winter Village
 # Team Members
 - Abhishek Adhikari
-- Alexander Shishkov
+- Aleksandr Shishkov
 - Yuewei Wu
 - Iaroslav Bashko
