@@ -2,6 +2,27 @@
 
 This document outlines the approach for our hackathon project. The objective is to apply what we've learned to a real-life project under the guidance of Miraa Vorne. In this hackathon, all participants are tasked with building a system with the same purpose, and the best implementation will be selected.
 
+## Table of Contents
+### Sprint 1
+   - [Team Members](#team-members)
+   - [Introduction to the System](#introduction-to-the-system)
+   - [Project Scope and Goals](#project-scope-and-goals)
+   - [Objectives and Deliverables](#objectives-and-deliverables)
+   - [Team Members and Responsibilities](#team-members-and-responsibilities)  
+   - [Milestones and Project Management](#milestones-and-project-management)  
+   - [Tools and Platforms for Effective Communication](#tools-and-platforms-for-effective-communication)  
+   - [Project Planning](#project-planning)  
+   - [Tech Stack](#tech-stack)  
+   - [Preliminary Research](#preliminary-research)  
+   - [Testing Plan](#testing-plan)
+     
+### Sprint 2
+   - [Project Design](#project-design)
+   - [System Architecture](#system-architecture)
+   - [Sensor Selection](#sensor-selection)
+   - [Security Measures](#security-measures)
+
+
 # Team Members
 - Abhishek Adhikari
 - Aleksandr Shishkov
@@ -87,7 +108,7 @@ https://github.com/users/Logisx/projects/1
 ## **Tech Stack**
 ### Front-end:
 - React.js is used for building a dynamic, responsive, and user-friendly interface. It allows the development of reusable UI components, ensuring efficiency and consistency across the application. 
-Node.js is for server-side rendering if required for SEO optimization and faster initial page loads.
+- Node.js is for server-side rendering if required for SEO optimization and faster initial page loads.
 ### Back-end:
 - **Backend**: **Node.js** with **Express.js** - Chosen for its fast, event-driven, and asynchronous nature, ideal for handling real-time data (reservations, sensor data). - Rich ecosystem and libraries (e.g., Socket.IO for real-time updates). 
 - **Database**: **PostgreSQL** - Reliable, scalable, and SQL-based, perfect for handling complex queries and large datasets. - Provides ACID compliance, which is essential for managing reservations and user data securely. 
@@ -98,19 +119,6 @@ Node.js is for server-side rendering if required for SEO optimization and faster
 Python, Sklearn, Pandas, Numpy, TensorFlow
 ### Embedded System:
 MicroPython and related libraries
-
-## **Testing Plan**  
-1. **Unit Testing**:  
-   - Verify individual components (e.g., reservation forms, APIs, and ML models).  
-
-2. **Integration Testing**:  
-   - Test interactions between modules (e.g., frontend-backend communication).  
-
-3. **Security Testing**:  
-   - Use automated tools (e.g., ESLint) and peer reviews during GitHub pull requests to identify vulnerabilities.  
-
-4. **CI/CD Pipeline**:  
-   - Integrate automated testing into the CI/CD pipeline to ensure quality and security throughout development.  
 
 ## Preliminary Research
 
@@ -123,3 +131,58 @@ MicroPython and related libraries
  - Data is encrypted during transit (e.g., using HTTPS) and at rest.
  - Authentication mechanisms, including secure tokens, are in place.
  - Regular vulnerability scans and updates to dependencies are performed.
+
+## **Testing Plan**  
+1. **Unit Testing**:  
+   - Verify individual components (e.g., reservation forms, APIs, and ML models).  
+
+2. **Integration Testing**:  
+   - Test interactions between modules (e.g., frontend-backend communication).  
+
+3. **Security Testing**:  
+   - Use automated tools (e.g., ESLint) and peer reviews during GitHub pull requests to identify vulnerabilities.  
+
+4. **CI/CD Pipeline**:  
+   - Integrate automated testing into the CI/CD pipeline to ensure quality and security throughout development.
+
+---
+
+## Project Design 
+The Smart Winter Village is an IoT-powered system designed to improve safety, manage resources, and enhance the ambiance of a remote cabin. It uses a network of sensors and actuators to monitor the environment, track wood storage, and create a cozy, immersive experience. All data is collected, processed, and displayed through an intuitive dashboard, making it easy to stay informed and in control.
+
+## System Architecture
+The system consists of the following key components:
+1.	**Frozen Road Alert System** – Detects ice patches and freezing conditions.
+2.	**Log Storage Checker** – Monitors firewood levels to prevent shortages.
+3.	**Ambient Experience System** – Controls LED lighting, fragrance, and music for a cozy atmosphere.
+4.	**AI Assistant & Dashboard** – Provides real-time monitoring and user interaction via REST APIs.
+5.	**Security Measures** – Implements encryption, authentication, and secure storage.
+
+ ## Sensor Selection
+ ### Frozen Road Alert System
+- **Temperature and Humidity Sensor (DHT11)** – Detects freezing temperatures and humidity changes.
+- **Infrared Ice Detection Sensor (MLX90614)** – Identifies ice patches using infrared reflection.
+
+ ### Log Storage Checker
+ - **Ultrasonic Sensor (HC-SR04)** – Measures distance to detect changes in wood pile height.
+ - **Weight Sensor (HX711 + Load Cell, optional)** – Tracks firewood usage through weight measurement.
+
+### Ambient Experience System
+- **RGB LED Strip (Neopixel)** – Provides dynamic lighting effects.
+- **DC Mini Air Pump** – Dispenses fragrance for enhanced atmosphere.
+- **Sound Module (PCM5102A I2S DAC + PAM8403 + 5W 8Ω Speaker)** – Plays music or ambient sounds.
+
+## Security Measures
+### Data Transmission Security
+- **Encrypt API Communications**: Use HTTPS/TLS for secure GET/POST requests between the dashboard, backend APIs, and external APIs.
+- **Authentication & Authorization**: Require API keys, OAuth, or JWT tokens for access to dashboards and external APIs.
+- **Firewall & Network Security**: Use firewalls and VPNs to restrict unauthorized access to backend APIs and IoT devices.
+
+### Data Storage Security
+- **Database Encryption**: Encrypt sensitive data (e.g., in InfluxDB) using AES or similar standards.
+- **Access Control**: Implement role-based access control (RBAC) to limit database access.
+- **Regular Backups**: Perform secure, regular backups to prevent data loss.
+
+### IoT & Sensor Security
+- **Sensor Data Integrity**: Validate and encrypt data from sensors (e.g., Wood Storage, Frozen Path) before transmission.
+- **Prevent Unauthorized Actuator Access**: Ensure only authenticated systems can control IoT components (e.g., LEDs, sound, fragrance dispensers).
