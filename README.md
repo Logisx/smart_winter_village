@@ -148,7 +148,7 @@ MicroPython and related libraries
 ---
 
 ## Project Design 
-The Smart Winter Village is an IoT-powered system designed to improve safety, manage resources, and enhance the ambiance of a remote cabin. It uses a network of sensors and actuators to monitor the environment, track wood storage, and create a cozy, immersive experience. All data is collected, processed, and displayed through an intuitive dashboard, making it easy to stay informed and in control.
+The Smart Winter Village is an IoT-powered system designed to improve safety, manage resources, and enhance the ambiance of a remote cabin. It uses a network of sensors and actuators to monitor the environment, track wood storage, and create a cozy, immersive experience. With AI-based insights, the system analyzes data to enhance safety and optimize the user experience. All data is collected, processed, and displayed through an intuitive dashboard, making it easy to stay informed and in control.
 
 ## System Architecture
 The system consists of the following key components:
