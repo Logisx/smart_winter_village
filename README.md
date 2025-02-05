@@ -187,14 +187,14 @@ The system consists of the following key components:
 | FR 77       | 8.53    | 3772112    | [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112) |
 | **Total**   | **38.57** |          |      |
 ### Optional
-
 ### Farnell
+*Solder-to-blackboard adapters, as Farnell only offer solder options.*
 | Item        | Price (€)| Order Code | Link |
 |-------------|---------|------------|------|
 | LCQT-SOIC16 Adapter | 8.01   | 2476039    | [SOIC16](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039) |
 | LCQT-TSSOP20 Adapter | 9.63    | 2476041    | [TSSOP20](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) |
-
 ### Partco
+*Weight sensor with amplifier*
 | Item               | Price (€) | Reference | Link |
 |--------------------|----------|------------|------|
 | Load Cell with HX711 | 10.85    | SEN LC1KG  | [Load Cell with HX711](https://www.partco.fi/en/electronic-components/sensors/weight/25719-sen-lc1kg.html) |
