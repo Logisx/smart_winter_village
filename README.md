@@ -188,7 +188,13 @@ The system consists of the following key components:
 | **Total**   | **38.57** |          |      |
 ### Optional
 
-### Fartco
+### Farnell
+| Item        | Price (€)| Order Code | Link |
+|-------------|---------|------------|------|
+| LCQT-SOIC16 Adapter | 8.01   | 2476039    | [SOIC16](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039) |
+| LCQT-TSSOP20 Adapter | 9.63    | 2476041    | [TSSOP20](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) |
+
+### Partco
 | Item               | Price (€) | Reference | Link |
 |--------------------|----------|------------|------|
 | Load Cell with HX711 | 10.85    | SEN LC1KG  | [Load Cell with HX711](https://www.partco.fi/en/electronic-components/sensors/weight/25719-sen-lc1kg.html) |
