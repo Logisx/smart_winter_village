@@ -162,9 +162,23 @@ The system consists of the following key components:
 
 
  ## Sensor Selection
- ### Order List
 
-#### Farnell
+ ### Frozen Road Alert System
+- **Temperature and Humidity Sensor (DHT11)** – Detects freezing temperatures and humidity changes.
+- **Infrared Ice Detection Sensor (MLX90614)** – Identifies ice patches using infrared reflection.
+
+ ### Log Storage Checker
+ - **Ultrasonic Sensor (HC-SR04)** – Measures distance to detect changes in wood pile height.
+ - **Weight Sensor (HX711 + Load Cell, optional)** – Tracks firewood usage through weight measurement.
+
+### Ambient Experience System
+- **RGB LED Strip (Neopixel)** – Provides dynamic lighting effects.
+- **DC Mini Air Pump** – Dispenses fragrance for enhanced atmosphere.
+- **Sound Module (PCM5102A I2S DAC + PAM8403 + 5W 8Ω Speaker)** – Plays music or ambient sounds.
+
+## Order List
+
+### Farnell
 | Item         | Price (€) | Order Code | Link |
 |-------------|----------|------------|------|
 | MLX90614   | 24.84    | 4200157    | [MLX90614](https://fi.farnell.com/en-FI/seeed-studio/101020895/infrared-thermometer-module-w/dp/4200157) |
@@ -172,26 +186,12 @@ The system consists of the following key components:
 | PAM8403DR   | 24.84    | 3373823    | [PAM8403DR](https://fi.farnell.com/en-FI/diodes-inc/pam8403dr/audio-power-amp-d-40-to-85deg/dp/3373823) |
 | FR 77       | 8.53     | 3772112    | [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112) |
 
-#### Optional
+### Optional
 
-##### Fartco
+### Fartco
 | Item               | Price (€) | Order Code | Link |
 |--------------------|----------|------------|------|
 | Load Cell with HX711 | 11.44    | SEN LC5KG  | [Load Cell with HX711](https://www.partco.fi/en/electronic-components/sensors/weight/24433-sen-lc5kg.html) |
-
-
- #### Frozen Road Alert System
-- **Temperature and Humidity Sensor (DHT11)** – Detects freezing temperatures and humidity changes.
-- **Infrared Ice Detection Sensor (MLX90614)** – Identifies ice patches using infrared reflection.
-
- #### Log Storage Checker
- - **Ultrasonic Sensor (HC-SR04)** – Measures distance to detect changes in wood pile height.
- - **Weight Sensor (HX711 + Load Cell, optional)** – Tracks firewood usage through weight measurement.
-
-#### Ambient Experience System
-- **RGB LED Strip (Neopixel)** – Provides dynamic lighting effects.
-- **DC Mini Air Pump** – Dispenses fragrance for enhanced atmosphere.
-- **Sound Module (PCM5102A I2S DAC + PAM8403 + 5W 8Ω Speaker)** – Plays music or ambient sounds.
 
 ## Security Measures
 ### Data Transmission Security
