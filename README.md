@@ -185,7 +185,7 @@ The system consists of the following key components:
 | PCM5102APWR | 4.08    | 3005708    | [PCM5102APWR](https://fi.farnell.com/en-FI/texas-instruments/pcm5102apwr/dac-32bit-384ksps-tssop-20/dp/3005708) |
 | PAM8403DR   | 1.12    | 3373823    | [PAM8403DR](https://fi.farnell.com/en-FI/diodes-inc/pam8403dr/audio-power-amp-d-40-to-85deg/dp/3373823) |
 | FR 77       | 8.53    | 3772112    | [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112) |
-|Total        | **38.57** |          |      |
+| **Total**   | **38.57** |          |      |
 ### Optional
 
 ### Fartco
