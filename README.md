@@ -193,7 +193,7 @@ The system consists of the following key components:
 |-------------|---------|------------|------|
 | LCQT-SOIC16 Adapter | 8.01   | 2476039    | [SOIC16](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039) |
 | LCQT-TSSOP20 Adapter | 9.63    | 2476041    | [TSSOP20](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) |
-### Partco
+### Partco (No analogues on Farnell or Elfa)
 *Weight sensor with amplifier*
 | Item               | Price (€) | Reference | Link |
 |--------------------|----------|------------|------|
