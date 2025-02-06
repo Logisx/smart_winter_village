@@ -179,25 +179,25 @@ The system consists of the following key components:
 ## Order List
 
 ### Farnell
-| Item        | Price (€)| Order Code | Link |
-|-------------|---------|------------|------|
-| MLX90614    | 24.84   | 4200157    | [MLX90614](https://fi.farnell.com/en-FI/seeed-studio/101020895/infrared-thermometer-module-w/dp/4200157) |
-| PCM5102APWR | 4.08    | 3005708    | [PCM5102APWR](https://fi.farnell.com/en-FI/texas-instruments/pcm5102apwr/dac-32bit-384ksps-tssop-20/dp/3005708) |
-| PAM8403DR   | 1.12    | 3373823    | [PAM8403DR](https://fi.farnell.com/en-FI/diodes-inc/pam8403dr/audio-power-amp-d-40-to-85deg/dp/3373823) |
-| FR 77       | 8.53    | 3772112    | [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112) |
-| **Total**   | **38.57** |          |      |
+|  Item        |  Price (€)  |  Order Code  |
+|-----------------------------------------------------------------------------------------------------------------|---------|---------|
+| [MLX90614](https://fi.farnell.com/en-FI/seeed-studio/101020895/infrared-thermometer-module-w/dp/4200157)        | 24.84   | 4200157 |
+| [PCM5102APWR](https://fi.farnell.com/en-FI/texas-instruments/pcm5102apwr/dac-32bit-384ksps-tssop-20/dp/3005708) | 4.08    | 3005708 |
+| [PAM8403DR](https://fi.farnell.com/en-FI/diodes-inc/pam8403dr/audio-power-amp-d-40-to-85deg/dp/3373823)         | 1.12    | 3373823 |
+| [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112)              | 8.53    | 3772112 |
+| **Total**    | **38.57**   |              |
 ### Optional
 ### Farnell
 *Solder-to-blackboard adapters, as Farnell only offer solder options.*
-| Item        | Price (€)| Order Code | Link |
-|-------------|---------|------------|------|
-| LCQT-SOIC16 Adapter | 8.01   | 2476039    | [SOIC16](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039) |
-| LCQT-TSSOP20 Adapter | 9.63    | 2476041    | [TSSOP20](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) |
+|  Item        |  Price (€)  |  Order Code  |
+|-----------------------------------------------------------------------------------------------------------------|------|---------|
+| [SOIC16 Adapter](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039)          | 8.01 | 2476039 |
+| [TSSOP20 Adapter](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) | 9.63 | 2476041 |
 ### Partco (No analogues on Farnell or Elfa)
 *Weight sensor with amplifier*
-| Item               | Price (€) | Reference | Link |
-|--------------------|----------|------------|------|
-| Load Cell with HX711 | 10.85    | SEN LC1KG  | [Load Cell with HX711](https://www.partco.fi/en/electronic-components/sensors/weight/25719-sen-lc1kg.html) |
+|  Item        |  Price (€)  |  Reference   |
+|------------------------------------------------------------------------------------------------------------|----------|------------|
+| [Load Cell with HX711](https://www.partco.fi/en/electronic-components/sensors/weight/25719-sen-lc1kg.html) | 10.85    | SEN LC1KG  |
 
 ## Security Measures
 ### Data Transmission Security
