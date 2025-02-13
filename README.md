@@ -191,7 +191,7 @@ The system consists of the following key components:
 ### Elfa Distrelec
 |  Item        |  Price (€)  |  Order Code  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|------------|
-| [MLX90614](https://www.elfadistrelec.fi/sv/mlx90614-ncir-infraroed-fjaerrtemperatursensorenhet-m5stack-u028/p/30172531?trackQuery=MLX90614&pos=5&origPos=1&origPageSize=50&track=true&sid=DqxHBMcEpn&itemList=search)        | 14.49 | 301-72-531 |
+| [MLX90614](https://www.elfadistrelec.fi/sv/mlx90614-ncir-infraroed-fjaerrtemperatursensorenhet-m5stack-u028/p/30172531?trackQuery=MLX90614&pos=5&origPos=1&origPageSize=50&track=true&sid=DqxHBMcEpn&itemList=search)        | 18.19 | 301-72-531 |
 
 
 ## Security Measures
