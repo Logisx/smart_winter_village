@@ -181,23 +181,17 @@ The system consists of the following key components:
 ### Farnell
 |  Item        |  Price (€)  |  Order Code  |
 |-----------------------------------------------------------------------------------------------------------------|---------|---------|
-| [MLX90614](https://fi.farnell.com/en-FI/seeed-studio/101020895/infrared-thermometer-module-w/dp/4200157)        | 24.84   | 4200157 |
 | [PCM5102APWR](https://fi.farnell.com/en-FI/texas-instruments/pcm5102apwr/dac-32bit-384ksps-tssop-20/dp/3005708) | 4.08    | 3005708 |
 | [PAM8403DR](https://fi.farnell.com/en-FI/diodes-inc/pam8403dr/audio-power-amp-d-40-to-85deg/dp/3373823)         | 1.12    | 3373823 |
 | [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112)              | 8.53    | 3772112 |
-| **Total**    | **38.57**   |              |
-### Optional
-### Farnell
-*Solder-to-blackboard adapters, as Farnell only offer solder options.*
+| [TSSOP20 Adapter](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) | 9.63    | 2476041 |
+| **Total**    | **23.36**   |              |
+
+### Elfa Distrelec
 |  Item        |  Price (€)  |  Order Code  |
-|-----------------------------------------------------------------------------------------------------------------|------|---------|
-| [SOIC16 Adapter](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039)          | 8.01 | 2476039 |
-| [TSSOP20 Adapter](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) | 9.63 | 2476041 |
-### Partco (No analogues on Farnell or Elfa)
-*Weight sensor with amplifier*
-|  Item        |  Price (€)  |  Reference   |
-|------------------------------------------------------------------------------------------------------------|----------|------------|
-| [Load Cell with HX711](https://www.partco.fi/en/electronic-components/sensors/weight/25719-sen-lc1kg.html) | 10.85    | SEN LC1KG  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|------------|
+| [MLX90614](https://www.elfadistrelec.fi/sv/mlx90614-ncir-infraroed-fjaerrtemperatursensorenhet-m5stack-u028/p/30172531?trackQuery=MLX90614&pos=5&origPos=1&origPageSize=50&track=true&sid=DqxHBMcEpn&itemList=search)        | 14.49 | 301-72-531 |
+
 
 ## Security Measures
 ### Data Transmission Security
