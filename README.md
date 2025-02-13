@@ -185,7 +185,8 @@ The system consists of the following key components:
 | [PAM8403DR](https://fi.farnell.com/en-FI/diodes-inc/pam8403dr/audio-power-amp-d-40-to-85deg/dp/3373823)         | 1.12    | 3373823 |
 | [FR 77](https://fi.farnell.com/en-FI/visaton/fr-77-8-ohm/speaker-full-range-250hz-87db/dp/3772112)              | 8.53    | 3772112 |
 | [TSSOP20 Adapter](https://fi.farnell.com/en-FI/aries/lcqt-tssop20/ic-adaptor-20-tssop-to-dip-2-54mm/dp/2476041) | 9.63    | 2476041 |
-| **Total**    | **23.36**   |              |
+| [SOIC16 Adapter](https://fi.farnell.com/aries/lcqt-soic16/ic-adaptor-16-soic-to-dip-2-54mm/dp/2476039)          | 8.01    | 2476039 |
+| **Total**    | **31.37**   |              |
 
 ### Elfa Distrelec
 |  Item        |  Price (€)  |  Order Code  |
