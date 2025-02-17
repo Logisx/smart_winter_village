@@ -1,0 +1,30 @@
+{
+  "name": "cottage_app",
+  "version": "1.0.0",
+  "description": "Backend app to serve for Smart Winter Village .",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "mocha tests/api.test.mjs --timeout 10000",
+    "start": "node src/server.mjs",
+    "dev": "nodemon src/server.mjs"
+  },
+  "author": "Abhishek Adhikari",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "dotnet": "^1.1.4",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.3",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.1.3",
+    "nodemon": "^3.1.9"
+  }
+}
