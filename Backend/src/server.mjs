@@ -3,6 +3,10 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+import "./config/mqtt.mjs"; 
+
+dotenv.config();
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

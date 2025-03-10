@@ -1,6 +1,8 @@
+import { publishMQTTMessage } from "../config/mqtt.mjs";
+
 export const getVibeSettings = (req, res) => {
     res.json({
-        archianceLevel: "Fairy",
+        ambianceLevel: "Fairy",
         music: {
             currentTrack: "Lavender Dreams",
             progress: "03:50",
@@ -18,7 +20,9 @@ export const getVibeSettings = (req, res) => {
     });
 };
 
+// Update vibe settings and send commands to MQTT
 export const updateVibeSettings = (req, res) => {
-    // Todo: Implement logic to update vibe settings
-    res.json({ message: "Vibe settings updated", ...req.body });
+    const { action } = req.body;
+    publishMQTTMessage("vibe/control", action);
+    res.json({ message: "Vibe settings updated", action });
 };
