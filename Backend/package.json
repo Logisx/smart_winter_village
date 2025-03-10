@@ -12,12 +12,14 @@
   "author": "Abhishek Adhikari",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "dotnet": "^1.1.4",
     "express": "^4.21.2",
     "helmet": "^8.0.0",
     "morgan": "^1.10.0",
+    "mqtt": "^5.10.4",
     "pg": "^8.13.3",
     "sequelize": "^6.37.5"
   },

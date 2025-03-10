@@ -3,8 +3,6 @@ import { getVibeSettings, updateVibeSettings } from "../controllers/vibeControll
 
 const router = Router();
 router.get("/settings", getVibeSettings);
-
 router.put("/settings", updateVibeSettings);
-
 
 export default router;
