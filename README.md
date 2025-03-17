@@ -212,7 +212,7 @@ The system consists of the following key components:
 - **Prevent Unauthorized Actuator Access**: Ensure only authenticated systems can control IoT components (e.g., LEDs, sound, fragrance dispensers).
 
 
-# **Smart Winter Village - Data Pipeline Implementation**
+# **Data Pipeline Implementation**
 
 This part outlines the **data pipeline architecture** used for collecting, processing, and visualizing real-time sensor data.
 
