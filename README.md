@@ -230,7 +230,7 @@ The data pipeline is structured to **efficiently collect, transmit, process, and
 
 2. **Data Transmission**  
    - The **Mosquitto MQTT Broker** routes messages between the sensor and other components.
-   - The **Telegraf Agent** subscribes to MQTT topics and processes incoming data.
+   - The **Telegraf Agent** subscribes to MQTT topics and passes incoming data to InfluxDB.
 
 3. **Data Processing**  
    - The **backend processes sensor data**, applies validation, and makes it accessible via REST APIs.
@@ -242,7 +242,8 @@ The data pipeline is structured to **efficiently collect, transmit, process, and
 ### **1.3 Architectural Diagram**
 Below is the **visual representation of our data pipeline**:
 
-![Data Pipeline](Pipeline.png)
+![Pipeline](https://github.com/user-attachments/assets/686fe10c-2be4-403e-8f21-dc478cae3d0b)
+
 
 🔵 **Blue Arrows** → Forward Data Flow  
 🔴 **Red Arrows** → Feedback or Acknowledgment Loop  
@@ -252,13 +253,14 @@ Below is the **visual representation of our data pipeline**:
 ## **2. Key Components & Technologies Used**
 
 ### **2.1 Data Collection**
-- **Hardware:** Raspberry Pi Pico W + Sensors (DHT22, Ultrasonic, etc.).
+- **Hardware:** Raspberry Pi Pico W + Sensors.
 - **Software:** MicroPython for **sensor reading and MQTT communication**.
 - **Protocol:** **MQTT** (Message Queuing Telemetry Transport) for lightweight communication.
 
-### **2.2 Data Transmission**
+### **2.2 Data Transmission and Storage**
 - **Broker:** **Mosquitto MQTT Broker** hosted on **Azure VM**.
-
+- **Telegraf Agent**
+- **InfluxDB**
 ---
 
 ## **3. Data Processing**
@@ -269,7 +271,7 @@ The **data processing phase** is a critical part of the pipeline where raw senso
 The **backend** is responsible for handling the **incoming data from the Telegraf agent** and making it available via **REST APIs**. The key responsibilities of the backend include:
 
 #### **Data Ingestion**
-- The backend **receives sensor data** from the **Telegraf agent**.
+- The backend **receives sensor data** from the **InfluxDB**.
 - The incoming data is **structured as JSON payloads**.
 
 #### **Data Validation & Filtering**
@@ -306,7 +308,7 @@ The **backend** is responsible for handling the **incoming data from the Telegra
 ### **4.2 Integration Testing**
 - Ensured **seamless connectivity** between:
   - **Raspberry Pi ⟷ MQTT Broker**
-  - **Telegraf ⟷ Backend**
+  - **InfluxDB ⟷ Backend**
   - **Backend ⟷ Frontend**
 - **Postman** for API testing, **Mosquitto CLI** for MQTT message verification.
 
