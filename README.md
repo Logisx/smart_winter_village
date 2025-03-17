@@ -24,6 +24,8 @@ This document outlines the approach for our hackathon project. The objective is 
    - [Security Measures](#security-measures)
 
 
+
+
 # Team Members
 - Abhishek Adhikari
 - Aleksandr Shishkov
@@ -208,3 +210,131 @@ The system consists of the following key components:
 ### IoT & Sensor Security
 - **Sensor Data Integrity**: Validate and encrypt data from sensors (e.g., Wood Storage, Frozen Path) before transmission.
 - **Prevent Unauthorized Actuator Access**: Ensure only authenticated systems can control IoT components (e.g., LEDs, sound, fragrance dispensers).
+
+
+# **Smart Winter Village - Data Pipeline Implementation**
+
+This part outlines the **data pipeline architecture** used for collecting, processing, and visualizing real-time sensor data.
+
+---
+
+## **1. Data Pipeline Architecture**
+
+### **1.1 Overview of the Data Pipeline**
+The data pipeline is structured to **efficiently collect, transmit, process, and visualize sensor data**. The flow of data moves from **hardware sensors** to a cloud-based backend, ensuring real-time updates and analytics.
+
+### **1.2 Data Flow in the Pipeline**
+1. **Data Collection**  
+   - **Raspberry Pi Pico W** collects environmental sensor data (e.g., temperature, humidity).
+   - The data is **published to the MQTT Broker**.
+
+2. **Data Transmission**  
+   - The **Mosquitto MQTT Broker** routes messages between the sensor and other components.
+   - The **Telegraf Agent** subscribes to MQTT topics and processes incoming data.
+
+3. **Data Processing**  
+   - The **backend processes sensor data**, applies validation, and makes it accessible via REST APIs.
+
+4. **Data Visualization**  
+   - The **frontend fetches processed data** from the backend.
+   - Clients interact with the **React Native dashboard** for real-time monitoring.
+
+### **1.3 Architectural Diagram**
+Below is the **visual representation of our data pipeline**:
+
+![Data Pipeline](Pipeline.png)
+
+🔵 **Blue Arrows** → Forward Data Flow  
+🔴 **Red Arrows** → Feedback or Acknowledgment Loop  
+
+---
+
+## **2. Key Components & Technologies Used**
+
+### **2.1 Data Collection**
+- **Hardware:** Raspberry Pi Pico W + Sensors (DHT22, Ultrasonic, etc.).
+- **Software:** MicroPython for **sensor reading and MQTT communication**.
+- **Protocol:** **MQTT** (Message Queuing Telemetry Transport) for lightweight communication.
+
+### **2.2 Data Transmission**
+- **Broker:** **Mosquitto MQTT Broker** hosted on **Azure VM**.
+
+---
+
+## **3. Data Processing**
+
+The **data processing phase** is a critical part of the pipeline where raw sensor data is **validated, filtered, and structured** before being made available for consumption by the **frontend application**. This phase ensures that **only accurate, relevant, and formatted data** is stored and visualized.
+
+### **3.1 Responsibilities of the Backend in Data Processing**
+The **backend** is responsible for handling the **incoming data from the Telegraf agent** and making it available via **REST APIs**. The key responsibilities of the backend include:
+
+#### **Data Ingestion**
+- The backend **receives sensor data** from the **Telegraf agent**.
+- The incoming data is **structured as JSON payloads**.
+
+#### **Data Validation & Filtering**
+- Ensures the data is in the **correct format** (e.g., numerical values for **temperature and humidity**).
+- **Filters out incorrect or corrupted readings** (e.g., negative temperature values where not applicable).
+- Applies **threshold-based validation** to prevent sensor errors from affecting the dataset.
+
+#### **Data Transformation & Structuring**
+- Converts **raw sensor readings** into a **structured format**.
+- **Applies time-series labeling** for chronological analysis.
+
+#### **Data Storage & API Accessibility**
+- Stores **processed data log securely** in **PostgreSQL** and **realtime sensor data** in **InfluxDB**.
+- Provides **REST API endpoints** for clients to **query and retrieve** the processed data.
+
+### **3.2 Data Flow in the Backend**
+1. **Telegraf Agent** receives raw sensor readings from **MQTT**.
+2. **The backend API ingests and validates the data**.
+3. **Valid data is formatted and stored** in the database.
+4. **API Endpoints serve processed data** to the frontend.
+
+### **3.3 Example of Data Validation & Processing**
+- If a **sensor reports a temperature of -100°C**, it is automatically **discarded as an invalid reading**.
+- The **timestamp for each data entry** is formatted for **correct time-series representation**.
+
+---
+
+## **4. Testing Implementation**
+
+### **4.1 Unit Testing**
+- **Backend API testing** using **Mocha and Chai**.
+- Each **new implementation** undergoes **independent unit testing**.
+
+### **4.2 Integration Testing**
+- Ensured **seamless connectivity** between:
+  - **Raspberry Pi ⟷ MQTT Broker**
+  - **Telegraf ⟷ Backend**
+  - **Backend ⟷ Frontend**
+- **Postman** for API testing, **Mosquitto CLI** for MQTT message verification.
+
+### **4.3 Performance Testing**
+- **We are thinking to implement this in upcoming phase after prototype finalization**.
+- Focus areas:
+  - API **response time** and **concurrent request handling**.
+  - **MQTT broker stress testing** under high loads.
+
+### **4.4 Data Validation**
+- **Input validation** at multiple levels:
+  - **Sensor data validation** (range checks, format verification).
+  - **API data integrity checks** before processing.
+
+---
+
+## **5. Security Measures Implemented**
+
+### **5.1 Firewalls & Network Security**
+- **Azure Firewall** configured to restrict access.
+- **UFW (Uncomplicated Firewall)** enabled on the VM.
+
+### **5.2 CORS Configuration**
+- Implemented **CORS policies** in the backend:
+  - Only **specific frontend domains** can make API requests.
+  - Restricted HTTP methods to prevent unauthorized access.
+
+---
+
+
+
