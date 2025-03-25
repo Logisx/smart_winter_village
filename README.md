@@ -160,7 +160,8 @@ The system consists of the following key components:
 3.	**Ambient Experience System** – Controls LED lighting, fragrance, and music for a cozy atmosphere.
 4.	**AI Assistant & Dashboard** – Provides real-time monitoring and user interaction via REST APIs.
 5.	**Security Measures** – Implements encryption, authentication, and secure storage.
-<img width="600" alt="system architecture" src="https://github.com/user-attachments/assets/1aff0b4a-5414-46ea-84b0-a25bb91a3d90" />
+![system](https://github.com/user-attachments/assets/8904082e-ae8c-4c6e-b083-7c8768d86736)
+
 
 
  ## Sensor Selection
