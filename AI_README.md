@@ -6,7 +6,7 @@ This section is divided into two parts:
 1. **Showcase Workflow** - A simplified version of the implementation used for demonstration purposes.
 2. **Planned Implementation Design** - A detailed plan for the full implementation.
 
-![Architecture Diagram](assets/Smart%20Environment%20Architecture%20Diagram%20-%20visual%20selection%20(2).png)
+![Architecture Diagram](assets/ai_workflow.png)
 
 ---
 
